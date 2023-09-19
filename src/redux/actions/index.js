@@ -42,7 +42,7 @@ export const handleSubmitAction = (query) => {
         dispatch({ type: SET_JOBS_ERROR_OFF });
       } else {
         alert("Error fetching results");
-        throw new Error("error");
+        throw new Error("We are sorry, servers are temporary down.");
       }
     } catch (error) {
       console.log(error);
